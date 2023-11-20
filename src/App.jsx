@@ -1,10 +1,14 @@
-import { useState } from 'react'
+
 import './App.css'
 import MyTitle from './componets/MyTitle'
 import PokemonCard from './componets/PokemonCard'
+import PropTypes from "prop-types";
 
 function App() {
-  //const [count, setCount] = useState(0)
+
+
+  
+
   const pokemonList = [
     {
       name: "bulbasaur",
@@ -18,7 +22,6 @@ function App() {
   const index = 0;
   const pokePicture = pokemonList[index].imgSrc;
   const pokeName = pokemonList[index].name;
-
   return (
  
       <div>
@@ -27,6 +30,10 @@ function App() {
       </div>
  
   )
-}
 
+}
+PokemonCard.propTypes = {
+  pokeName: PropTypes.string.isRequired,
+  pokePicture: PropTypes.string.isRequired
+}
 export default App
