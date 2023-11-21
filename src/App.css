@@ -40,3 +40,18 @@
 .read-the-docs {
   color: #888;
 }
+ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+
+}
+li {
+  background-color: grey;
+  margin: 0.2em;
+}
+li button {
+  background-color: aliceblue;
+  color:darkseagreen;
+  font-size: 1.2em;
+}

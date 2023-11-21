@@ -45,7 +45,8 @@ function App() {
         <MyTitle/>
         <NavBar lengthPokemonList={lengthPokemonList}
                 pokemonIndex={pokemonIndex}
-                setPokemonIndex={setPokemonIndex}/>
+                setPokemonIndex={setPokemonIndex}
+                pokemonList={pokemonList}/>
         <PokemonCard pokeName={pokeName} pokePicture={pokePicture}/>
         
       </div>
