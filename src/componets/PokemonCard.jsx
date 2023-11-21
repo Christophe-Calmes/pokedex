@@ -1,6 +1,6 @@
 
+
 export const PokemonCard = ({pokePicture, pokeName}) => {
-  //console.log(pokemon);
 
 
     
