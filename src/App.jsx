@@ -3,7 +3,8 @@ import './App.css'
 import MyTitle from './componets/MyTitle'
 import PokemonCard from './componets/PokemonCard'
 import NavBar from './componets/NavBar';
-import {useState} from "react"; 
+import { useState } from "react"; 
+import { useEffect } from "react";
 const pokemonList = [
   {
       name: "bulbasaur",
@@ -32,11 +33,18 @@ const pokemonList = [
   ];
 function App() {
 
-   const lengthPokemonList = pokemonList.length;
-    const [pokemonIndex, setPokemonIndex] = useState(0);
+  useEffect(()=>{
+  alert("hello pokemon trainer :)");
+  }, [])
 
-  //const index = navigationPokemonList(pokemonIndex, lengthPokemonList);
+  const lengthPokemonList = pokemonList.length;
+  const [pokemonIndex, setPokemonIndex] = useState(0);
+
+ 
   const index = pokemonIndex;
+  if(pokemonIndex === 3) {
+    alert("pika pikachu !!!");
+  }
   const pokePicture = pokemonList[index].imgSrc;
   const pokeName = pokemonList[index].name;
   return (
